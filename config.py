@@ -23,11 +23,21 @@ class Config:
         f.close()
 
     # Getters & Setters
+    def get_cols(self):
+        return self.config["rows"]
+
     def set_cols(self, cols):
         self.config["cols"] = cols
+
+    def get_rows(self):
+        return self.config["cols"]
 
     def set_rows(self, rows):
         self.config["rows"] = rows
 
     def set_time_delay(self, time_delay):
         self.config["time_delay"] = time_delay
+
+    def get_time_delay(self):
+        return self.config["time_delay"]
+    
