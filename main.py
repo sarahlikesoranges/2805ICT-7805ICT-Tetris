@@ -1,5 +1,10 @@
 import json
 
+__author__ = "Damian Mann, Sarah Puglisi, William Todd, Vinh Phuc Hoang"
+__copyright__ = "Copyright 2022, Griffith University"
+__license__ = "MIT"
+__version__ = "0.1"
+
 def read_config():
     # Function to read the configuration file
     # Should probably refactor into a class in the future
