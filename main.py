@@ -8,6 +8,7 @@ __version__ = "0.1"
 def read_config():
     # Function to read the configuration file
     # Should probably refactor into a class in the future
+    # A class would allow us to have read/write/update methods
     # Returns: Dictionary or False
     try:
         with open('config.json', 'r') as f:
@@ -21,6 +22,8 @@ def run_game():
     config = read_config()
     if (not config):
         print("Error reading config file")
+        exit()
+    # Run game
     
 
 
