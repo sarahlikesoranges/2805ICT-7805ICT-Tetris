@@ -1,6 +1,6 @@
 import json
-from config import *
-from gameboard import *
+from src.config import *
+from src.gameboard import *
 
 __author__ = "Damian Mann, Sarah Puglisi, William Todd, Vinh Phuc Hoang"
 __copyright__ = "Copyright 2022, Griffith University"
