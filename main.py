@@ -11,7 +11,7 @@ def run_game():
     # Grabs the stored config
     config = Config('config.json')
     gameboard = GameBoard(config)
-    print(gameboard.get_gameboard())
+    gameboard.print_gameboard()
     
 
 if __name__ == '__main__':

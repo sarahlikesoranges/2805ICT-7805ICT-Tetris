@@ -15,3 +15,10 @@ class GameBoard:
 
     def get_gameboard(self):
         return self.gameboard
+
+    def print_gameboard(self):
+        # This is a helper function - dont use in production
+        # iterate over the gameboard and then print out each row
+        gameboard_by_row = [self.gameboard[x:x+self.rows] for x in range(0, len(self.gameboard), self.rows)]
+        for row in gameboard_by_row:
+            print(row)
