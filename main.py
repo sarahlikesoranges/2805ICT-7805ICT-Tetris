@@ -25,10 +25,44 @@ def run_game():
     display = pg.display.set_mode((display_width, display_height))
     clock = pg.time.Clock()
     pg.display.set_caption('Tetris!')
+
+    # Ah, i can instantly see an issue with the game being
+    # paused and resumed. But we can sort that later.
     # Main gameloop
     while not paused:
         for event in pg.event.get():
+            # Exits the game if the window is closed
             if event.type == pg.QUIT: sys.exit()
+
+            # Main game loop
+            # We will have functions to deal with these inputs
+
+            # Listen for a key press
+            # List of keys avaliable here:
+            # https://www.pygame.org/docs/ref/key.html
+            if event.type == pg.KEYDOWN:
+                if event.key ==  pg.K_LEFT:
+                    # Move the block left 1 square
+                    pass
+                if event.key == pg.K_RIGHT:
+                    # Move the block right 1 square
+                    pass
+                if event.key == pg.K_UP:
+                    # Do nothing? I think
+                    pass
+                if event.key == pg.K_DOWN:
+                    # Move the block down at an faster rate
+                    pass
+                if event.key == pg.K_p:
+                    # Pause the game
+                    pass
+                if event.key == pg.K_m:
+                    # Toggle the music/audio
+                    pass
+                if event.key == pg.K_SPACE:
+                    # Drop the block immediately
+                    pass
+        
         # Display title page -- Will need to refactor (im just playing around)
         display.fill((255, 255, 255))
         largeText = pg.font.Font('freesansbold.ttf', 115)
